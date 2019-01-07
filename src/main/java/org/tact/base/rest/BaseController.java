@@ -11,6 +11,12 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping(value = "/base")
 public class BaseController {
 	
+	/**
+	 * 
+	 * @return
+	 * 
+	 * http://localhost:8080/base
+	 */
     @RequestMapping(value = "", method = RequestMethod.GET)
     public <T> T listUsers() {
         Map<String, Object> map = new LinkedHashMap<String, Object>();
